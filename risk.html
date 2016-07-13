@@ -108,56 +108,63 @@
 
 					</section>
 
-				<!-- Footer -->
-				<section id="footer">
-					<div class="inner" id = Touch>
-						<h2 class="major"> Get in touch </h2>
-						<p> Feel free to reach out if you liked the idea, need an e-commerce intern, a platinum duo partner or if you just need a <a href = http://vignette2.wikia.nocookie.net/leagueoflegends/images/e/ed/Amumu.joke.ogg/revision/latest?cb=20121127025808&filename=Amumu.joke target="_blank">friend.</a><p>
-						<form method="post" action="MAILTO:elias.bacarro@gmail.com" enctype="text/plain">
-							<div class="field">
-								<label for="name">Name</label>
-								<input type="text" name="name" id="name" />
+					<!-- Footer -->
+						<section id="footer">
+							<div class="inner" id =Touch>
+								<h2 class="major">Get in touch</h2>
+								<p> Feel free to reach out if you liked the idea, need an e-commerce intern, a platinum duo partner or if you just need a <a href = http://vignette2.wikia.nocookie.net/leagueoflegends/images/e/ed/Amumu.joke.ogg/revision/latest?cb=20121127025808&filename=Amumu.joke target="_blank">friend.</a><p>
+									<form id="contactform" action="//formspree.io/elias.bacarro@gmail.com" method="POST">
+									<div class="field">
+										<label for="name">Name</label>
+										<input type="text" name="Name" required placeholder="Rito Tryndamere">
+									</div>
+									<div class="field">
+										<label for="email">Email</label>
+										<input type="text" name="Email" required placeholder="tryndamere420slayer@ritogaems.com">
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="4" placeholder="Great Ideas and Beautiful Site. Truly Inspiring Stuff. I'd like to hire you full-time at Rito Games. Please come 1v1 Faker, date Sjokz and rework Ryze again for us."></textarea>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" onclick="alert('Thanks for reaching out. I'm probably in game, so I'll get back to you shortly :)')" /></li>
+									</ul>
+									<input type="hidden" name="_subject" value="Website contact" />
+			<input type="text" name="_gotcha" style="display:none" />
+			<input type="hidden" name="_next" value="http://getturnedonnoob.github.io/#touch" />
+		</form>
+		<script>
+			var contactform =  document.getElementById('contactform');
+				contactform.setAttribute('action', '//formspree.io/' + 'elias.bacarro' + '@' + 'gmail' + '.' + 'com');
+		</script>
+								<ul class="contact">
+									<li class="fa-home">
+										Elias Bacarro<br />
+										298 Neville Dr.<br />
+										London, ON N6G 1C3 <br />
+										Canada
+									</li>
+									<li class="fa-phone">647 968 6032</li>
+									<li class="fa-envelope"><a href="mailto:elias.bacarro@gmail.com?subject=Congrats!%20You're%20Hired!&amp;body=You%20were%20the%20best%20Candidate%20by%20far.%20We%20will%20now%20hire%20you%2C%20give%20you%201on1%20private%20lessons%20with%20Faker%20and%20set%20up%20a%205%20star%20candle%20lit%20dinner%20for%20you%20and%20Sjokz.">elias.bacarro@gmail.com</a></li>
+									<li class="fa-linkedin"><a href="https://www.linkedin.com/in/eliasbacarro" target="_blank">ca.linkedin.com/in/eliasbacarro</a></li>
+									<li class="fa-facebook"><a href="https://www.facebook.com/elias.bacarro" target="_blank">facebook.com/elias.bacarro</a></li>
+									<li class="fa-keyboard-o"><a href="https://na.op.gg/summoner/userName=getturnedonnoob" target="_blank">NA: GetTurnedOnNoob</a></li>
+								</ul>
+								<ul class="copyright">
+									<li>&copy; As Part of a Riot Games E-commerce Intern Application by Elias Bacarro. All rights reserved. </li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+								</ul>
 							</div>
-							<div class="field">
-								<label for="email">Email</label>
-								<input type="email" name="email" id="email" />
-							</div>
-							<div class="field">
-								<label for="message">Message</label>
-								<textarea name="message" id="message" rows="4"></textarea>
-							</div>
-							<ul class="actions">
-								<li><input type="submit" value="Send Message" /></li>
-							</ul>
-						</form>
-						<ul class="contact">
-							<li class="fa-home">
-								Elias Bacarro<br />
-								298 Neville Dr.<br />
-								London, ON N6G 1C3 <br />
-								Canada
-							</li>
-							<li class="fa-phone">647 968 6032</li>
-							<li class="fa-envelope"><a href="mailto:elias.bacarro@gmail.com?subject=Congrats!%20You're%20Hired!&amp;body=You%20were%20the%20best%20Candidate%20by%20far.%20We%20will%20now%20hire%20you%2C%20give%20you%201on1%20private%20lessons%20with%20Faker%20and%20set%20up%20a%205%20star%20candle%20lit%20dinner%20for%20you%20and%20Sjokz.">elias.bacarro@gmail.com</a></li>
-							<li class="fa-linkedin"><a href="https://www.linkedin.com/in/eliasbacarro" target="_blank">ca.linkedin.com/in/eliasbacarro</a></li>
-							<li class="fa-facebook"><a href="https://www.facebook.com/elias.bacarro" target="_blank">facebook.com/elias.bacarro</a></li>
-							<li class="fa-keyboard-o"><a href="https://na.op.gg/summoner/userName=getturnedonnoob" target="_blank">NA: GetTurnedOnNoob</a></li>
-						</ul>
-						<ul class="copyright">
-							<li>&copy; As Part of a Riot Games E-commerce Intern Application by Elias Bacarro. All rights reserved. </li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						</ul>
-					</div>
-				</section>
+						</section>
 
-			</div>
+				</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
+			<!-- Scripts -->
+				<script src="assets/js/skel.min.js"></script>
+				<script src="assets/js/jquery.min.js"></script>
+				<script src="assets/js/jquery.scrollex.min.js"></script>
+				<script src="assets/js/util.js"></script>
+				<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+				<script src="assets/js/main.js"></script>
 
-	</body>
-</html>
+		</body>
+	</html>

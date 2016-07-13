@@ -160,23 +160,30 @@
 						<div class="inner" id =Touch>
 							<h2 class="major">Get in touch</h2>
 							<p> Feel free to reach out if you liked the idea, need an e-commerce intern, a platinum duo partner or if you just need a <a href = http://vignette2.wikia.nocookie.net/leagueoflegends/images/e/ed/Amumu.joke.ogg/revision/latest?cb=20121127025808&filename=Amumu.joke target="_blank">friend.</a><p>
-							<form method="post" action="MAILTO:elias.bacarro@gmail.com" enctype="text/plain">
+								<form id="contactform" action="//formspree.io/elias.bacarro@gmail.com" method="POST">
 								<div class="field">
 									<label for="name">Name</label>
-									<input type="text" name="name" id="name" />
+									<input type="text" name="Name" required placeholder="Rito Tryndamere">
 								</div>
 								<div class="field">
 									<label for="email">Email</label>
-									<input type="email" name="email" id="email" />
+									<input type="text" name="Email" required placeholder="tryndamere420slayer@ritogaems.com">
 								</div>
 								<div class="field">
 									<label for="message">Message</label>
-									<textarea name="message" id="message" rows="4"></textarea>
+									<textarea name="message" id="message" rows="4" placeholder="Great Ideas and Beautiful Site. Truly Inspiring Stuff. I'd like to hire you full-time at Rito Games. Please come 1v1 Faker, date Sjokz and rework Ryze again for us."></textarea>
 								</div>
 								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
+									<li><input type="submit" value="Send Message" onclick="alert('Thanks for reaching out. I'm probably in game, so I'll get back to you shortly :)')" /></li>
 								</ul>
-							</form>
+								<input type="hidden" name="_subject" value="Website contact" />
+		<input type="text" name="_gotcha" style="display:none" />
+		<input type="hidden" name="_next" value="http://getturnedonnoob.github.io/#touch" />
+	</form>
+	<script>
+		var contactform =  document.getElementById('contactform');
+			contactform.setAttribute('action', '//formspree.io/' + 'elias.bacarro' + '@' + 'gmail' + '.' + 'com');
+	</script>
 							<ul class="contact">
 								<li class="fa-home">
 									Elias Bacarro<br />
